@@ -7,33 +7,50 @@ import (
 	"cuelang.org/go/tools/flow"
 )
 
-// TaskFunc is the only place where CUE values are classified as executable
-// tasks. It does not own policy. The CUE contract owns admissible task shape.
-func TaskFuncFor(report *Report) flow.TaskFunc {
+// TaskFuncFor classifies only values marked with $id. CUE owns admissibility;
+// this adapter only binds supported task IDs to mechanical runners.
+func TaskFuncFor(run *RunReport) flow.TaskFunc {
 	return func(v cue.Value) (flow.Runner, error) {
-		return taskFunc(v, report)
+		idValue := v.LookupPath(cue.MakePath(cue.Str("$id")))
+		id, err := idValue.String()
+		if err != nil {
+			if v.LookupPath(cue.MakePath(cue.Str("$id"))).Exists() {
+				return nil, fmt.Errorf("task $id must be a concrete string at %s: %w", v.Path(), err)
+			}
+			return nil, nil
+		}
+
+		runner, ok := runnerForID(id, run)
+		if !ok {
+			return nil, fmt.Errorf("unsupported task $id %q at %s", id, v.Path())
+		}
+		return runner, nil
 	}
 }
 
-func TaskFunc(v cue.Value) (flow.Runner, error) {
-	return taskFunc(v, nil)
-}
-
-func taskFunc(v cue.Value, report *Report) (flow.Runner, error) {
-	kindValue := v.LookupPath(cue.ParsePath("kind"))
-	if !kindValue.Exists() {
-		return nil, nil
-	}
-
-	kind, err := kindValue.String()
-	if err != nil {
-		return nil, fmt.Errorf("task kind must be a concrete string at %s: %w", v.Path(), err)
-	}
-
-	switch kind {
-	case "echo":
-		return EchoRunner{Agent: StubAgent{}, Report: report}, nil
+func runnerForID(id string, run *RunReport) (flow.Runner, bool) {
+	switch id {
+	case "discover_root":
+		return flow.RunnerFunc(func(t *flow.Task) error {
+			return runTask(t, run, discoverRoot)
+		}), true
+	case "scan_surfaces":
+		return flow.RunnerFunc(func(t *flow.Task) error {
+			return runTask(t, run, scanSurfaces)
+		}), true
+	case "classify_surfaces":
+		return flow.RunnerFunc(func(t *flow.Task) error {
+			return runTask(t, run, classifySurfaces)
+		}), true
+	case "assess_ssot":
+		return flow.RunnerFunc(func(t *flow.Task) error {
+			return runTask(t, run, assessSSOT)
+		}), true
+	case "emit_report":
+		return flow.RunnerFunc(func(t *flow.Task) error {
+			return runTask(t, run, emitReport)
+		}), true
 	default:
-		return nil, fmt.Errorf("unsupported task kind %q at %s", kind, v.Path())
+		return nil, false
 	}
 }

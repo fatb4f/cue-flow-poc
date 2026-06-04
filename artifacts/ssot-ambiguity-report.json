@@ -1,0 +1,885 @@
+{
+  "ambiguityCount": 119,
+  "blockingMessages": [
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "justfile: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "justfile: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+    "justfile: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+  ],
+  "classification": {
+    "authoritative": [
+      "AGENTS.cue",
+      "cue/flow/authority.cue",
+      "cue/flow/schema.cue"
+    ],
+    "projectionOnly": [
+      "README.md",
+      "cue/flow/app/app.cue",
+      "cue/flow/fixtures/bad_agent_policy.cue",
+      "cue/flow/fixtures/bad_agent_raw_fill.cue",
+      "cue/flow/fixtures/bad_ambiguity.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+      "cue/flow/fixtures/bad_fill_wrong_applier.cue",
+      "cue/flow/fixtures/bad_fill_wrong_proposer.cue",
+      "cue/flow/fixtures/bad_infer_tasks_enabled.cue",
+      "cue/flow/fixtures/bad_runner_policy.cue",
+      "cue/flow/fixtures/bad_unaccepted_fill.cue",
+      "cue/flow/fixtures/bad_unbound_runner.cue",
+      "cue/flow/fixtures/good_single_step.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue",
+      "justfile"
+    ],
+    "legacy": null,
+    "adapterBoundary": [
+      "cmd/flow-poc/main.go",
+      "internal/flowpoc/classifier.go",
+      "internal/flowpoc/report.go",
+      "internal/flowpoc/runners.go"
+    ],
+    "ambiguous": [
+      {
+        "path": "README.md",
+        "claim": "Minimal proof-of-concept for a CUE-owned `tools/flow` authority model.",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "CUE owns the task and step contracts.",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "cuelang.org/go/tools/flow owns lifecycle mechanics.",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "CUE owns admissibility. tools/flow owns lifecycle mechanics.",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "go-mcp is an adapter boundary, not a policy authority.",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "- No historical authority documents.",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "├── AGENTS.cue                         # root authority pointer",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "├── cue/flow/authority.cue             # authority summary value",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "flow.Terminated is a native lifecycle state.",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "contract.clear is an authority overlay.",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "A step can clear only when:",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "README.md",
+        "claim": "authorityAccepted == true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "\"cue/flow/authority.cue\",",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "rootAuthorityFile: string",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "lifecycleSchema:   string",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "rootAuthorityKind: string",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "rootAuthority: discover_root.output",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "\"authority\",",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "\"owns\",",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "\"ownedBy\",",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "\"policy\",",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "\"must\",",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "\"clear\",",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "\"admissible\",",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "\"lifecycle\",",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "rootAuthority: discover_root.output",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "rootAuthority:  discover_root.output",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/app/app.cue",
+        "claim": "rootAuthority:  discover_root.output",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_policy.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_policy.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_policy.cue",
+        "claim": "agentOwnsPolicy:     true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_policy.cue",
+        "claim": "badAgentPolicy: flow.#FlowRunContract \u0026 {",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_policy.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_policy.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_policy.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_raw_fill.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_raw_fill.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_raw_fill.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_raw_fill.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_raw_fill.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_agent_raw_fill.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_ambiguity.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_ambiguity.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_ambiguity.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_ambiguity.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_ambiguity.cue",
+        "claim": "reason:   \"intentional bad fixture: ambiguity cannot coexist with clear=true\"",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_ambiguity.cue",
+        "claim": "reason:   \"intentional bad fixture: ambiguity cannot coexist with clear=true\"",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_ambiguity.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_ambiguity.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "badExplicitEdgeAuthority: flow.#FlowRunContract \u0026 {",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "dependsOnProjectionAuthority: \"authoritative\"",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_explicit_edge_authority.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_applier.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_applier.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_applier.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_applier.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_applier.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_applier.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_proposer.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_proposer.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_proposer.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_proposer.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_proposer.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_fill_wrong_proposer.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_infer_tasks_enabled.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_infer_tasks_enabled.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_infer_tasks_enabled.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_infer_tasks_enabled.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_infer_tasks_enabled.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_infer_tasks_enabled.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_runner_policy.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_runner_policy.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_runner_policy.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_runner_policy.cue",
+        "claim": "id:      \"runner.bad-policy\"",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_runner_policy.cue",
+        "claim": "ownsPolicy:    true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_runner_policy.cue",
+        "claim": "badRunnerPolicy: flow.#FlowRunContract \u0026 {",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_runner_policy.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_runner_policy.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_runner_policy.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unaccepted_fill.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unaccepted_fill.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unaccepted_fill.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unaccepted_fill.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unaccepted_fill.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unaccepted_fill.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unbound_runner.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unbound_runner.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unbound_runner.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unbound_runner.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unbound_runner.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/bad_unbound_runner.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_single_step.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_single_step.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_single_step.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_single_step.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_single_step.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_single_step.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "ownsPolicy:         false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "ownsPolicy:    false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "agentOwnsPolicy:     false",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "// Projection/cache only; real authority remains cue-reference-analysis.",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "dependsOnProjectionAuthority: \"projection-only\"",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "authorityAccepted: true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "cue/flow/fixtures/good_two_step_reference_chain.cue",
+        "claim": "clear:             true",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "justfile",
+        "claim": "! {{CUE}} eval -c ./cue/flow/fixtures/bad_agent_policy.cue \u003e/dev/null",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "justfile",
+        "claim": "! {{CUE}} eval -c ./cue/flow/fixtures/bad_runner_policy.cue \u003e/dev/null",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      },
+      {
+        "path": "justfile",
+        "claim": "! {{CUE}} eval -c ./cue/flow/fixtures/bad_explicit_edge_authority.cue \u003e/dev/null",
+        "reason": "authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+      }
+    ],
+    "accepted": false,
+    "ambiguity": [
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "README.md: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/app/app.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_agent_raw_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_ambiguity.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_explicit_edge_authority.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_applier.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_fill_wrong_proposer.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_infer_tasks_enabled.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_runner_policy.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unaccepted_fill.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/bad_unbound_runner.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_single_step.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "cue/flow/fixtures/good_two_step_reference_chain.cue: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "justfile: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "justfile: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue",
+      "justfile: authority-shaped claim is projection-only unless accepted by AGENTS.cue or cue/flow/schema.cue"
+    ]
+  },
+  "classifiedCount": 498,
+  "rootAuthority": {
+    "accepted": true,
+    "ambiguity": [],
+    "lifecycleSchema": "cue/flow/schema.cue",
+    "rootAuthorityFile": "AGENTS.cue",
+    "rootAuthorityKind": "flow-task-graph-lifecycle-schema"
+  },
+  "ssotRoot": "cue/flow/schema.cue",
+  "summary": "SSOT assessment ambiguous with 119 unresolved ambiguity findings across 498 authority-shaped surfaces",
+  "verdict": "ambiguous"
+}

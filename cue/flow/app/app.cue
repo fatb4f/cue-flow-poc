@@ -1,27 +1,117 @@
 package app
 
-flow: {
-	first: {
-		kind: "echo"
-		input: message: "hello"
+root: {
+	discover_root: {
+		$id: "discover_root"
+		input: files: [
+			"AGENTS.cue",
+			"cue/flow/schema.cue",
+			"cue/flow/authority.cue",
+		]
 		output: {
-			message: string
-			ok:      bool
+			rootAuthorityFile: string
+			lifecycleSchema:   string
+			rootAuthorityKind: string
+			ambiguity: [...string]
+			accepted: bool
 		}
 	}
 
-	second: {
-		kind: "echo"
-		// This reference is what tools/flow should discover as a dependency.
-		input: message: flow.first.output.message
+	scan_surfaces: {
+		$id: "scan_surfaces"
+
+		rootAuthority: discover_root.output
+
+		input: {
+			includePatterns: [
+				"authority",
+				"owns",
+				"ownedBy",
+				"policy",
+				"contract",
+				"root",
+				"must",
+				"clear",
+				"admissible",
+				"lifecycle",
+				"runner",
+				"agent",
+				"Task.Fill",
+				"$id",
+				"$after",
+			]
+			excludePaths: [
+				".git",
+				"vendor",
+				"node_modules",
+				"go.sum",
+				"artifacts",
+			]
+		}
+
 		output: {
-			message: string
-			ok:      bool
+			surfaces: [...{
+				path:    string
+				line:    int
+				pattern: string
+				claim:   string
+			}]
+			accepted: bool
+			ambiguity: [...string]
 		}
 	}
-}
 
-report: {
-	first:  flow.first.output
-	second: flow.second.output
+	classify_surfaces: {
+		$id: "classify_surfaces"
+
+		rootAuthority: discover_root.output
+		surfaces:      scan_surfaces.output.surfaces
+
+		output: {
+			authoritative: [...string]
+			projectionOnly: [...string]
+			legacy: [...string]
+			adapterBoundary: [...string]
+			ambiguous: [...{
+				path:   string
+				claim:  string
+				reason: string
+			}]
+			accepted: bool
+			ambiguity: [...string]
+		}
+	}
+
+	assess_ssot: {
+		$id: "assess_ssot"
+
+		rootAuthority:  discover_root.output
+		classification: classify_surfaces.output
+
+		output: {
+			ssotRoot:       string
+			ambiguityCount: int
+			blockingAmbiguity: [...string]
+			verdict:  string
+			accepted: bool
+			ambiguity: [...string]
+		}
+	}
+
+	emit_report: {
+		$id: "emit_report"
+
+		rootAuthority:  discover_root.output
+		surfaces:       scan_surfaces.output
+		classification: classify_surfaces.output
+		assessment:     assess_ssot.output
+
+		output: {
+			reportPath: string
+			summary:    string
+			complete:   bool
+			accepted:   bool
+			ambiguity: [...string]
+		}
+	}
 }
