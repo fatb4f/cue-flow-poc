@@ -9,7 +9,17 @@ import (
 
 // TaskFunc is the only place where CUE values are classified as executable
 // tasks. It does not own policy. The CUE contract owns admissible task shape.
+func TaskFuncFor(report *Report) flow.TaskFunc {
+	return func(v cue.Value) (flow.Runner, error) {
+		return taskFunc(v, report)
+	}
+}
+
 func TaskFunc(v cue.Value) (flow.Runner, error) {
+	return taskFunc(v, nil)
+}
+
+func taskFunc(v cue.Value, report *Report) (flow.Runner, error) {
 	kindValue := v.LookupPath(cue.ParsePath("kind"))
 	if !kindValue.Exists() {
 		return nil, nil
@@ -22,7 +32,7 @@ func TaskFunc(v cue.Value) (flow.Runner, error) {
 
 	switch kind {
 	case "echo":
-		return EchoRunner{}, nil
+		return EchoRunner{Agent: StubAgent{}, Report: report}, nil
 	default:
 		return nil, fmt.Errorf("unsupported task kind %q at %s", kind, v.Path())
 	}

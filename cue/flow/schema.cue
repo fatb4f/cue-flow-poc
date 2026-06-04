@@ -18,7 +18,7 @@ package flow
 
 	// PoC authority mode intentionally disables ambiguity-expanding discovery.
 	inferTasks:      false | *false
-	ignoreConcrete: bool | *false
+	ignoreConcrete:  bool | *false
 	findHiddenTasks: false | *false
 }
 
@@ -34,7 +34,7 @@ package flow
 	}
 
 	classifiesCueValue: true
-	createsRunner:     true
+	createsRunner:      true
 
 	// TaskFunc may classify values and create Runners, but CUE owns admissibility.
 	ownsPolicy: false
@@ -48,8 +48,25 @@ package flow
 	executesTask: true
 	mayFill:      true
 
-	// Runner executes and may Fill. It never owns policy.
+	// The Go flow.Runner is the mechanical boundary. It validates an agent
+	// proposal before calling raw Task.Fill, but never owns policy.
+	validatesFill: true
+	callsTaskFill: true
+
 	ownsPolicy: false
+}
+
+#AgentRunnerBinding: {
+	kind: "agent-runner"
+
+	agentExecutesTask:   true
+	agentMayProposeFill: true
+
+	// The agent must not call raw task.Fill.
+	agentMayCallRawFill: false
+
+	// Policy remains CUE-owned.
+	agentOwnsPolicy: false
 }
 
 #ReferenceDependency: {
@@ -68,15 +85,19 @@ package flow
 	"runner_unbound" |
 	"explicit_edge_claims_authority" |
 	"unaccepted_fill_payload" |
+	"agent_claims_raw_fill_authority" |
+	"agent_claims_policy_authority" |
 	"runner_claims_policy_authority" |
+	"invalid_fill_proposer" |
+	"invalid_fill_applier" |
 	"uncleared_dependency" |
 	"cycle_detected" |
 	"step_contract_unbound"
 
 #AmbiguityFinding: {
-	kind!:     #AmbiguityKind
-	path!:     string
-	reason!:   string
+	kind!:    #AmbiguityKind
+	path!:    string
+	reason!:  string
 	severity: "blocker"
 }
 
@@ -91,6 +112,7 @@ package flow
 
 	taskFunc!: #TaskFuncBinding
 	runner!:   #RunnerBinding
+	agent!:    #AgentRunnerBinding
 
 	state!: #FlowState
 
@@ -104,26 +126,36 @@ package flow
 
 	authority: {
 		taskShapeOwnedBy: "cue-contract"
-		edgeAuthority:   "cue-references"
-		executionOwnedBy: "runner"
+		edgeAuthority:    "cue-references"
+		executionOwnedBy: "agent"
+		fillOwnedBy:      "go-flow-runner"
 
 		adapterOwnsPolicy: false
+		agentOwnsPolicy:   false
+		runnerOwnsPolicy:  false
 	}
 }
 
-#FillContract: {
+#TaskFillGate: {
 	taskPath!: string
+
+	proposedBy: "agent"
+	appliedBy:  "go-flow-runner"
+
+	payload!: _
+
+	outputAccepted!:    bool
+	authorityAccepted!: bool
+	ambiguity!: [...#AmbiguityFinding]
+
+	accepted!: bool
+	accepted:  outputAccepted == true
+	accepted:  authorityAccepted == true
+	accepted:  len(ambiguity) == 0
 
 	source:         "Task.Fill"
 	composition:    "conjunctive"
 	effectiveAfter: "Task.Terminated"
-
-	payload!: _
-	accepted!: bool
-}
-
-#AcceptedFillContract: #FillContract & {
-	accepted: true
 }
 
 #StepContract: {
@@ -131,7 +163,12 @@ package flow
 
 	task!: #TaskContract
 
-	fill?: #AcceptedFillContract
+	fillGate!: #TaskFillGate & {
+		taskPath:          task.path
+		outputAccepted:    outputAccepted
+		authorityAccepted: authorityAccepted
+		ambiguity:         ambiguity
+	}
 
 	ambiguity!: [...#AmbiguityFinding]
 
@@ -145,6 +182,7 @@ package flow
 	clear: outputAccepted == true
 	clear: authorityAccepted == true
 	clear: len(ambiguity) == 0
+	clear: fillGate.accepted == true
 }
 
 #FlowRunContract: {
@@ -164,19 +202,30 @@ package flow
 	referenceGraph!: {
 		edgeAuthority: "cue-references"
 		cyclic:        false
-		edges:         [...#ReferenceDependency]
+		edges: [...#ReferenceDependency]
 	}
 
 	steps!: [...#StepContract]
 
 	invariants: {
-		cueOwnsTaskContracts:       true
-		cueReferencesOwnEdges:      true
-		taskFuncClassifiesOnly:     true
-		runnerExecutesOnly:         true
-		adapterOwnsPolicy:          false
-		fillRequiresOutputContract: true
-		clearRequiresZeroAmbiguity: true
-		goMCPIsAdapterOnly:         true
+		cueOwnsTaskContracts:        true
+		cueOwnsOutputContracts:      true
+		cueOwnsAuthority:            true
+		cueOwnsClearanceRules:       true
+		cueReferencesOwnEdges:       true
+		taskFuncClassifiesOnly:      true
+		agentIsSemanticRunner:       true
+		agentProposesFillOnly:       true
+		goRunnerIsFillBoundary:      true
+		runnerValidatesFill:         true
+		runnerCallsTaskFill:         true
+		runnerExecutesOnly:          true
+		adapterOwnsPolicy:           false
+		agentOwnsPolicy:             false
+		runnerOwnsPolicy:            false
+		fillRequiresOutputContract:  true
+		clearRequiresZeroAmbiguity:  true
+		goMCPIsAdapterOnly:          true
+		flowControllerOwnsLifecycle: true
 	}
 }

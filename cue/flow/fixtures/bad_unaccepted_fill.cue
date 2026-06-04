@@ -1,25 +1,34 @@
 package fixtures
 
-import flow "cue-flow-poc/cue/flow"
+import flow "cue-flow-poc.local/cue/flow"
 
 _tf: {
 	id:      "taskfunc.basic"
 	adapter: "local-go"
 
 	classifiesCueValue: true
-	createsRunner:     true
-	ownsPolicy:        false
+	createsRunner:      true
+	ownsPolicy:         false
 }
 
 _echoRunner: {
 	id:      "runner.echo"
 	adapter: "local-go"
 
-	executesTask: true
-	mayFill:      true
-	ownsPolicy:   false
+	executesTask:  true
+	mayFill:       true
+	validatesFill: true
+	callsTaskFill: true
+	ownsPolicy:    false
 }
 
+_agent: {
+	kind:                "agent-runner"
+	agentExecutesTask:   true
+	agentMayProposeFill: true
+	agentMayCallRawFill: false
+	agentOwnsPolicy:     false
+}
 
 badUnacceptedFill: flow.#FlowRunContract & {
 	config: {
@@ -35,8 +44,9 @@ badUnacceptedFill: flow.#FlowRunContract & {
 		input: {message: "hello"}
 		output: {message: "hello"}
 		taskFunc: _tf
-		runner: _echoRunner
-		state: "Terminated"
+		runner:   _echoRunner
+		agent:    _agent
+		state:    "Terminated"
 		referenceDependencies: []
 	}
 
@@ -46,17 +56,22 @@ badUnacceptedFill: flow.#FlowRunContract & {
 	}
 
 	steps: [{
-		id: "step.first"
+		id:   "step.first"
 		task: tasks.first
-		fill: {
-			taskPath: "flow.first"
+		fillGate: {
+			taskPath:   "flow.first"
+			proposedBy: "agent"
+			appliedBy:  "go-flow-runner"
 			payload: {output: tasks.first.output}
+			outputAccepted:    false
+			authorityAccepted: true
+			ambiguity: []
 			accepted: false
 		}
 		ambiguity: []
-		flowTerminated: true
-		outputAccepted: true
+		flowTerminated:    true
+		outputAccepted:    true
 		authorityAccepted: true
-		clear: true
+		clear:             true
 	}]
 }

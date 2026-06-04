@@ -16,8 +16,29 @@ type Report struct {
 	SourcePackage string          `json:"sourcePackage"`
 	SourceVersion string          `json:"sourceVersion"`
 	Root          string          `json:"root"`
+	Agent         AgentReport     `json:"agent"`
+	Runner        RunnerReport    `json:"runner"`
+	Flow          FlowReport      `json:"flow"`
 	Tasks         []TaskReport    `json:"tasks"`
 	FinalValue    json.RawMessage `json:"finalValue"`
+}
+
+type AgentReport struct {
+	Role         string `json:"role"`
+	ProposedFill bool   `json:"proposedFill"`
+	OwnsPolicy   bool   `json:"ownsPolicy"`
+}
+
+type RunnerReport struct {
+	Role           string `json:"role"`
+	ValidatedFill  bool   `json:"validatedFill"`
+	CalledTaskFill bool   `json:"calledTaskFill"`
+	OwnsPolicy     bool   `json:"ownsPolicy"`
+}
+
+type FlowReport struct {
+	Terminated             bool `json:"terminated"`
+	FinalValueContainsFill bool `json:"finalValueContainsFill"`
 }
 
 type TaskReport struct {
@@ -49,10 +70,24 @@ func Run(repoRoot string) (*Report, error) {
 		return nil, fmt.Errorf("build CUE app: %w", err)
 	}
 
+	report := &Report{
+		SourcePackage: "cuelang.org/go/tools/flow",
+		SourceVersion: "v0.6.0",
+		Root:          "flow",
+		Agent: AgentReport{
+			Role:       "semantic-runner",
+			OwnsPolicy: false,
+		},
+		Runner: RunnerReport{
+			Role:       "go-flow-runner",
+			OwnsPolicy: false,
+		},
+	}
+
 	controller := flow.New(&flow.Config{
 		Root:       cue.ParsePath("flow"),
 		InferTasks: false,
-	}, root, TaskFunc)
+	}, root, TaskFuncFor(report))
 
 	if err := controller.Run(context.Background()); err != nil {
 		return nil, fmt.Errorf("run flow: %w", err)
@@ -64,12 +99,7 @@ func Run(repoRoot string) (*Report, error) {
 		return nil, fmt.Errorf("marshal final value: %w", err)
 	}
 
-	report := &Report{
-		SourcePackage: "cuelang.org/go/tools/flow",
-		SourceVersion: "v0.6.0",
-		Root:          "flow",
-		FinalValue:    finalJSON,
-	}
+	report.FinalValue = finalJSON
 
 	for _, task := range controller.Tasks() {
 		tr := TaskReport{
@@ -85,6 +115,37 @@ func Run(repoRoot string) (*Report, error) {
 		}
 		report.Tasks = append(report.Tasks, tr)
 	}
+	report.Flow.Terminated = allTasksTerminated(report.Tasks)
+	report.Flow.FinalValueContainsFill = finalValueContainsFill(final)
 
 	return report, nil
+}
+
+func allTasksTerminated(tasks []TaskReport) bool {
+	if len(tasks) == 0 {
+		return false
+	}
+	for _, task := range tasks {
+		if task.State != "Terminated" || task.Err != "" {
+			return false
+		}
+	}
+	return true
+}
+
+func finalValueContainsFill(v cue.Value) bool {
+	firstMessage, err := v.LookupPath(cue.ParsePath("report.first.message")).String()
+	if err != nil || firstMessage == "" {
+		return false
+	}
+	firstOK, err := v.LookupPath(cue.ParsePath("report.first.ok")).Bool()
+	if err != nil || !firstOK {
+		return false
+	}
+	secondMessage, err := v.LookupPath(cue.ParsePath("report.second.message")).String()
+	if err != nil || secondMessage == "" {
+		return false
+	}
+	secondOK, err := v.LookupPath(cue.ParsePath("report.second.ok")).Bool()
+	return err == nil && secondOK
 }

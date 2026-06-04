@@ -30,12 +30,9 @@ _agent: {
 	agentOwnsPolicy:     false
 }
 
-goodSingleStep: flow.#FlowRunContract & {
+badFillWrongApplier: flow.#FlowRunContract & {
 	config: {
-		root:            "flow"
-		inferTasks:      false
-		ignoreConcrete:  false
-		findHiddenTasks: false
+		root: "flow"
 	}
 
 	taskFunc: _tf
@@ -44,19 +41,12 @@ goodSingleStep: flow.#FlowRunContract & {
 		id:   "first"
 		kind: "run_step"
 		path: "flow.first"
-
 		input: {message: "hello"}
-		output: {
-			message: "hello"
-			ok:      true
-		}
-
+		output: {message: "hello"}
 		taskFunc: _tf
 		runner:   _echoRunner
 		agent:    _agent
-
-		state: "Terminated"
-
+		state:    "Terminated"
 		referenceDependencies: []
 	}
 
@@ -71,7 +61,7 @@ goodSingleStep: flow.#FlowRunContract & {
 		fillGate: {
 			taskPath:   "flow.first"
 			proposedBy: "agent"
-			appliedBy:  "go-flow-runner"
+			appliedBy:  "agent"
 			payload: {output: tasks.first.output}
 			outputAccepted:    true
 			authorityAccepted: true

@@ -22,20 +22,17 @@ _echoRunner: {
 	ownsPolicy:    false
 }
 
-_agent: {
+_badAgent: {
 	kind:                "agent-runner"
 	agentExecutesTask:   true
 	agentMayProposeFill: true
-	agentMayCallRawFill: false
+	agentMayCallRawFill: true
 	agentOwnsPolicy:     false
 }
 
-goodSingleStep: flow.#FlowRunContract & {
+badAgentRawFill: flow.#FlowRunContract & {
 	config: {
-		root:            "flow"
-		inferTasks:      false
-		ignoreConcrete:  false
-		findHiddenTasks: false
+		root: "flow"
 	}
 
 	taskFunc: _tf
@@ -44,19 +41,12 @@ goodSingleStep: flow.#FlowRunContract & {
 		id:   "first"
 		kind: "run_step"
 		path: "flow.first"
-
 		input: {message: "hello"}
-		output: {
-			message: "hello"
-			ok:      true
-		}
-
+		output: {message: "hello"}
 		taskFunc: _tf
 		runner:   _echoRunner
-		agent:    _agent
-
-		state: "Terminated"
-
+		agent:    _badAgent
+		state:    "Terminated"
 		referenceDependencies: []
 	}
 

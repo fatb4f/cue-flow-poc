@@ -10,8 +10,9 @@ This repo is intentionally small. It proves the control law before any migration
 CUE owns the task and step contracts.
 cuelang.org/go/tools/flow owns lifecycle mechanics.
 TaskFunc classifies CUE values into runnable tasks.
-Runner executes only a bound task and may call Task.Fill.
-Task.Fill output is accepted only through the CUE step contract.
+The agent is the semantic runner. It may propose a task result.
+The Go flow.Runner is the mechanical runner boundary. It validates the proposal and calls task.Fill.
+CUE owns admissibility. tools/flow owns lifecycle mechanics.
 go-mcp is an adapter boundary, not a policy authority.
 ```
 
@@ -63,10 +64,17 @@ The Go proof loads `cue/flow/app`, runs `tools/flow`, records task states/depend
 flow.Terminated is a native lifecycle state.
 contract.clear is an authority overlay.
 
+agent runs task
+agent proposes fill payload
+runner/gate validates payload
+runner/gate calls task.Fill
+flow controller conjoins fill payload into CUE
+flow controller recomputes task graph
+
 A step can clear only when:
   flowTerminated == true
   outputAccepted == true
   authorityAccepted == true
   ambiguity == []
+  fillGate.accepted == true
 ```
-

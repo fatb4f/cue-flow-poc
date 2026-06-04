@@ -12,6 +12,10 @@ vet-good:
 
 vet-bad:
     ! {{CUE}} eval -c ./cue/flow/fixtures/bad_ambiguity.cue >/dev/null
+    ! {{CUE}} eval -c ./cue/flow/fixtures/bad_agent_policy.cue >/dev/null
+    ! {{CUE}} eval -c ./cue/flow/fixtures/bad_agent_raw_fill.cue >/dev/null
+    ! {{CUE}} eval -c ./cue/flow/fixtures/bad_fill_wrong_applier.cue >/dev/null
+    ! {{CUE}} eval -c ./cue/flow/fixtures/bad_fill_wrong_proposer.cue >/dev/null
     ! {{CUE}} eval -c ./cue/flow/fixtures/bad_runner_policy.cue >/dev/null
     ! {{CUE}} eval -c ./cue/flow/fixtures/bad_unaccepted_fill.cue >/dev/null
     ! {{CUE}} eval -c ./cue/flow/fixtures/bad_explicit_edge_authority.cue >/dev/null
